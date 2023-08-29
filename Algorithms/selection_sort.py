@@ -8,6 +8,7 @@ def selectionSort(arr):
             if arr[min_index] > arr[j]:
                 min_index = j
         arr[min_index], arr[i] = arr[i], arr[min_index]
+    print(arr)
     return arr
 
 selectionSort([3, 4, 3, 2, 5])
