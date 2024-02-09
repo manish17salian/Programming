@@ -1,5 +1,5 @@
 # Question: https://www.codingninjas.com/studio/problems/zigzag-binary-tree-traversal_920532?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
-
+# Also called ZIGZAG Traversal
 '''
     Following is the structure of Tree Node
 
