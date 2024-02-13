@@ -25,7 +25,8 @@ def traverseBoundary(root):
     
     stack = []
     
-    def leftNodes(node):
+    # This block is used to find the left boundry till the leaf node
+    def leftNodes(node):    
         curr = node.left
         while curr:
             if not checkLeafNode(curr):
@@ -34,7 +35,10 @@ def traverseBoundary(root):
                 curr = curr.left
             else:
                 curr = curr.right
-    
+
+
+    # This block is used to find the right boundry till the leaf node.
+    # A stack is used so that we ccan give an inverse of the flow
     def rightNode(node):
         curr = node.right
         temp = []
@@ -48,7 +52,8 @@ def traverseBoundary(root):
         
         while temp:
             stack.append(temp.pop())
-    
+
+    # Add the leaf node 
     def addLeaf(node):
         if checkLeafNode(node):
             stack.append(node.data)
@@ -59,6 +64,7 @@ def traverseBoundary(root):
         if node.right is not None:
             addLeaf(node.right)
     
+    #Generate the results
     def returnres(node):
         if checkLeafNode(node):
             stack.append(node.data)
