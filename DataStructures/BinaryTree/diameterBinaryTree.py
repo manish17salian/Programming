@@ -1,8 +1,5 @@
 # Question: https://www.codingninjas.com/studio/problems/diameter-of-binary-tree_920552?leftPanelTabValue=SUBMISSION
 
-
-# Following is the TreeNode class structure.
-
 class TreeNode:
     def __init__(self, data):
         self.data = data

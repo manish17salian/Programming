@@ -5,7 +5,7 @@ class TreeNode:
         self.data = data
         self.left = None
         self.right = None
-
+#   Itrative
 def maxDepth(root: TreeNode) -> int:
     if not root:
         return 0
@@ -23,6 +23,8 @@ def maxDepth(root: TreeNode) -> int:
 
     return max_depth
 
+
+#   Recursive
 def maxDepth(root: TreeNode) -> int:
     def traverse(node):
         if node is None:
