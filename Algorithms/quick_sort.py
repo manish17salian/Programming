@@ -39,3 +39,19 @@ quick_sort([2,2])
 # quick_sort([1,99,1000,121,2,2,3,7])
 # quick_sort([92,99,79,9,3,0])
 # quick_sort([1,2,3,0,4])
+
+
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quick_sort(less_than_pivot) + [pivot] + quick_sort(greater_than_pivot)
+
+# Example usage
+arr = [10, 7, 8, 9, 1, 5]
+sorted_arr = quick_sort(arr)
+print("Sorted array:", sorted_arr)

@@ -25,3 +25,5 @@ def delNode(head, k):
             ind += 1
     
     return head
+
+
