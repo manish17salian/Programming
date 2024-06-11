@@ -1,4 +1,4 @@
-# Question: https://www.naukri.com/code360/problems/rotting-oranges_701655?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+ # Question: https://www.naukri.com/code360/problems/rotting-oranges_701655?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
 
 from collections import deque
 def minTimeToRot(grid, n, m):
