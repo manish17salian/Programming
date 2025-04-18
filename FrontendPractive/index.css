@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f1f1f1;
+  }
+  
+  
+  .header {
+    display: flex;
+    width: "100%";
+    border: 1px solid red;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .controls{
+    display: flex;
+  }
+  
+  .reset{
+    margin: 10px
+  }
+  
+  .game{
+    padding: 10px
+  }
+  
+  .tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns */
+    grid-template-rows: repeat(3, 100px); /* 3 rows */
+    gap: 2px; /* Gap between cells */
+    margin: 20px auto; /* Center the grid */
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .modalBackgroud {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color:red;
+    visibility: hidden;
+  }
+  
+  .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem 2.5rem;
+    width: 200px;
+    border-radius: 0.5rem;
+  }
+  
+  .showModal{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 2px;
+    margin: 20px auto;
+    border: 2px solid #000;
+  }
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+  }
+  .player {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .controls {
+    margin: 20px;
+  }
+  
+  .container {
+    background: #fff;
+  }
+  .users__container {
+    height: 500px;
+    overflow: auto;
+    background: #fff;
+    margin-top: 3px;
+  }
+  .user__header,
+  .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+    background: #ccc;
+  }
+  .user__header {
+    box-shadow: 0px 0px 14px 0px #3ead2a59;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .user {
+    margin-top: 3px;
+    padding: 2px 15px;
+    font-weight: initial;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .user-logo {
+    flex: 1;
+  }
+  .user-name {
+    flex: 2;
+  }
+  .user-country {
+    flex: 2;
+  }
+  .user-email {
+    flex: 2;
+  }
+  .user-address {
+    flex: 2;
+  }
+  .item {
+    align-self: center;
+    word-break: break-word;
+  }
+  
+  .loaderContainer{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .container{
+    display: flex;
+  }
+  
+  .column{
+    width: 30%;
+    margin: 2px;
+    height: 300px;
+    border: 1px solid black;
+  }
+  
+  .tasks{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 1px;
+    border: 1px solid red;
+    width: 60%;
+  }
+  
